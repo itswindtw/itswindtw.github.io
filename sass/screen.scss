@@ -1,0 +1,62 @@
+a {
+  color: #9D5014;
+  &:hover { color: #B7580F; }
+}
+
+body {
+  background-color: #1E1E1E;
+  padding-top: 28px;
+
+  .row {
+    // border-top: 1px solid #7A7A7A;
+    margin-top: 25px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #E1E1E1;
+  }
+
+  .row:first-child {
+    color: white;
+    margin-top: 0;
+  }
+}
+
+.item {
+  div:first-child {
+    font-size: 1.8em;
+    border-left: 2px solid #2AEA2A;
+  }
+
+  div:last-child {
+    // padding-top: 5px;
+  }
+}
+
+.profile {
+  position: relative;
+  border-bottom: 3px solid #4F2CED;
+
+  p { margin-bottom: 5px }
+
+  .chinese-name {
+    font-size: 2.7em;
+    letter-spacing: 0.1em;
+  }
+  .english-translation {
+    font-size: 1.4em;
+    letter-spacing: 0.08em;
+  }
+
+  #net-info-container {
+    position: absolute;
+    right: 15px;
+    bottom: 1px;
+    text-align: right;
+    font-size: larger;
+  }
+}
+
+
+.work-experience {
+  div:first-child { font-size: 1.5em; }
+}
