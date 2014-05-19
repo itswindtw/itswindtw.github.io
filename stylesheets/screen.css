@@ -23,7 +23,11 @@ body {
   position: relative;
   border-bottom: 3px solid #4F2CED; }
   .profile p {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    margin-left: 105px; }
+  .profile .avatar {
+    position: absolute;
+    height: 92%; }
   .profile .chinese-name {
     font-size: 2.7em;
     letter-spacing: 0.1em; }
