@@ -36,7 +36,15 @@ body {
   position: relative;
   border-bottom: 3px solid #4F2CED;
 
-  p { margin-bottom: 5px }
+  p {
+    margin-bottom: 5px;
+    margin-left: 105px;
+  }
+
+  .avatar {
+    position: absolute;
+    height: 92%;
+  }
 
   .chinese-name {
     font-size: 2.7em;

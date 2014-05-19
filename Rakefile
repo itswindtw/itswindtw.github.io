@@ -13,11 +13,16 @@ task :copy_stylesheets do
   FileList['stylesheets/**/*'].each {|f| cp f, File.join(deploy_dir, File.dirname(f)) }
 end
 
+task :copy_images do
+  mkdir_p File.join(deploy_dir, 'images')
+  FileList['images/**/*'].each {|f| cp f, File.join(deploy_dir, File.dirname(f)) }
+end
+
 task :clear_prev_deploy do
   FileList["#{deploy_dir}/*"].each { |f| rm_r f }
 end
 
-multitask build: %i{copy_html_files copy_stylesheets} do
+multitask build: %i{copy_html_files copy_stylesheets copy_images} do
   puts "All files are ready for deploying"
 end
 
@@ -25,5 +30,6 @@ task :deploy => [:clear_prev_deploy, :build] do
   cd deploy_dir do
     system 'git add -A .'
     system "git commit -m \"Site updated at #{DateTime.now}\""
+    system 'git push'
   end
 end
