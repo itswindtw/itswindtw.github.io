@@ -5,26 +5,37 @@ html
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     meta name="viewport" content="width=device-width, initial-scale=1"
     meta name="author" content="Meng-Hsin Tung"
-    title
+    title itswind.tw
     link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"
+    link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"
     link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet"
   body
     .container.col-xs-8.col-xs-offset-2
       .row.profile
         img.avatar.img-circle src="images/avatar.jpg"
         #net-info-container
-          p itswind.tw
-          p itswindtw [at] gmail [dot] com
+          p
+            span.glyphicon.glyphicon-home
+            | itswind.tw
+          p
+            span.glyphicon.glyphicon-envelope
+            | itswindtw [at] gmail [dot] com
         p.chinese-name 董孟鑫
         p.english-translation Meng-Hsin Tung
       .row.item.education
         .col-xs-3 Education
         .col-xs-9
-          | <a href="#">Lorem Ipsum </a>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          .school
+            a.name href="http://www.nctu.edu.tw/" target="_blank" National Chiao Tung University, Taiwan
+            ul
+              li.major Bechelor Degree / Computer Science (2010/09 - 2013/06)
       .row.item.work-experience
         .col-xs-3 Work Experience
         .col-xs-9
-          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          .company
+            a.name href="http://hypo.cc" target="_blank" Hypo.cc
+            ul
+              li.job-title Web Developer
       .row.item.projects
         .col-xs-3 Projects
         .col-xs-9
@@ -32,4 +43,13 @@ html
       .row.item.social
         .col-xs-3 Social
         .col-xs-9
-          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          a href="https://github.com/itswindtw": i.fa.fa-github.fa-5x
+          a href="https://twitter.com/itswindtw": i.fa.fa-twitter.fa-5x
+          a href="https://facebook.com/itswindtw": i.fa.fa-facebook-square.fa-5x
+          a href="http://tw.linkedin.com/in/itswindtw": i.fa.fa-linkedin-square.fa-5x
+
+
+      .row.footer.text-right
+        .col-xs-12
+          | Icons by <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a>
+

@@ -1,9 +1,18 @@
+$body_color: #E1E1E1;
+
 a {
   color: #9D5014;
   &:hover { color: #B7580F; }
 }
 
+img.desaturate {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
 body {
+  cursor: default;
   background-color: #1E1E1E;
   padding-top: 28px;
 
@@ -12,23 +21,31 @@ body {
     margin-top: 25px;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: #E1E1E1;
+    color: $body_color;
   }
 
   .row:first-child {
     color: white;
     margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 
 .item {
-  div:first-child {
-    font-size: 1.8em;
+  font-size: larger;
+
+  > div:first-child {
+    font-size: 1.4em;
     border-left: 2px solid #2AEA2A;
   }
 
-  div:last-child {
+  > div:last-child {
     // padding-top: 5px;
+  }
+
+  a.name {
+    color: $body_color;
+    font-weight: bold;
   }
 }
 
@@ -61,10 +78,37 @@ body {
     bottom: 1px;
     text-align: right;
     font-size: larger;
+
+    p span { margin-right: 5px; }
   }
 }
 
 
+.education {
+  > div:last-child {  }
+  .school {
+
+  }
+}
+
 .work-experience {
-  div:first-child { font-size: 1.5em; }
+  > div:first-child { font-size: 1.3em; }
+
+  .company {
+
+  }
+}
+
+
+.social {
+  a {
+    display: inline-block;
+    margin: 0 25px;
+    color: $body_color;
+  }
+}
+.row.footer {
+  font-style: italic;
+  color: #555;
+  a { }
 }
