@@ -52,7 +52,7 @@ body {
     bottom: 1px;
     text-align: right;
     font-size: larger; }
-    .profile #net-info-container p span {
+    .profile #net-info-container p i {
       margin-right: 5px; }
 
 .work-experience > div:first-child {
