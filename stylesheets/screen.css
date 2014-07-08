@@ -21,6 +21,8 @@ body {
     color: white;
     margin-top: 0;
     margin-bottom: 50px; }
+  body li {
+    list-style-type: square; }
 
 .item {
   font-size: larger; }
@@ -36,7 +38,7 @@ body {
   border-bottom: 3px solid #4F2CED; }
   .profile p {
     margin-bottom: 5px;
-    margin-left: 105px; }
+    margin-left: 115px; }
   .profile .avatar {
     position: absolute;
     height: 92%; }
@@ -55,12 +57,39 @@ body {
     .profile #net-info-container p i {
       margin-right: 5px; }
 
+.during {
+  font-size: 90%; }
+
 .work-experience > div:first-child {
   font-size: 1.3em; }
+.work-experience .job .job-title:after {
+  content: " @ "; }
+
+.projects .project {
+  float: left;
+  width: 46%;
+  margin: 10px 2%;
+  display: inline-block;
+  background-color: #222222;
+  border-radius: 15px;
+  padding: 10px 15px; }
+  .projects .project .project-name {
+    font-size: 1.2em;
+    margin-bottom: 10px; }
+  .projects .project .project-techniques {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #262626;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #CCC;
+    font-size: 90%; }
+.projects img.preview {
+  width: 100%; }
 
 .social a {
   display: inline-block;
-  margin: 0 18px;
+  margin: 0 20px;
   color: #e1e1e1; }
 
 .row.footer {
