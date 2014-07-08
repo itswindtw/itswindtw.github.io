@@ -15,7 +15,7 @@ end
 
 task :copy_images do
   mkdir_p File.join(deploy_dir, 'images')
-  FileList['images/**/*'].each {|f| cp f, File.join(deploy_dir, File.dirname(f)) }
+  FileList['images/**/*'].each {|f| cp_r f, File.join(deploy_dir, File.dirname(f)) }
 end
 
 task :clear_prev_deploy do
