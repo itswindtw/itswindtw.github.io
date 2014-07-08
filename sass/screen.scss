@@ -29,6 +29,8 @@ body {
     margin-top: 0;
     margin-bottom: 50px;
   }
+
+  li { list-style-type: square; }
 }
 
 .item {
@@ -55,7 +57,7 @@ body {
 
   p {
     margin-bottom: 5px;
-    margin-left: 105px;
+    margin-left: 115px;
   }
 
   .avatar {
@@ -91,11 +93,45 @@ body {
   }
 }
 
+.during {
+  font-size: 90%;
+}
+
 .work-experience {
   > div:first-child { font-size: 1.3em; }
 
-  .company {
+  .job {
+    .job-title:after { content: " @ " }
 
+    .job-detail { }
+  }
+}
+
+.projects {
+  .project {
+    float:left;
+    width: 46%;
+    margin: 10px 2%;
+    display: inline-block;
+    background-color: #222222;
+    border-radius: 15px;
+    padding: 10px 15px;
+
+    .project-name { font-size: 1.2em; margin-bottom: 10px; }
+
+    .project-techniques {
+      text-align: center;
+      padding: 5px 10px;
+      background-color: #262626;
+      margin-top: 10px;
+      border-radius: 5px;
+      color: #CCC;
+      font-size: 90%;
+    }
+  }
+
+  img.preview {
+    width: 100%;
   }
 }
 
@@ -103,7 +139,7 @@ body {
 .social {
   a {
     display: inline-block;
-    margin: 0 18px;
+    margin: 0 20px;
     color: $body_color;
   }
 }
