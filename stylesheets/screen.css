@@ -16,7 +16,7 @@ body {
     margin-top: 25px;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: #e1e1e1; }
+    color: #E1E1E1; }
   body .row:first-child {
     color: white;
     margin-top: 0;
@@ -30,7 +30,7 @@ body {
     font-size: 1.4em;
     border-left: 2px solid #2AEA2A; }
   .item a.name {
-    color: #e1e1e1;
+    color: #E1E1E1;
     font-weight: bold; }
 
 .profile {
@@ -90,7 +90,7 @@ body {
 .social a {
   display: inline-block;
   margin: 0 20px;
-  color: #e1e1e1; }
+  color: #E1E1E1; }
 
 .row.footer {
   font-style: italic;
