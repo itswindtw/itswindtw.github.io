@@ -3,7 +3,7 @@
 
 guard 'sass', :input => 'sass', :output => 'stylesheets'
 
-guard 'slim', :slim => { :pretty => true } do
+guard 'slim', :slim_options => { :pretty => true } do
   watch(%r{^.+\.slim$})
 end
 
